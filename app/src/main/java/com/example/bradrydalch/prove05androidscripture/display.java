@@ -17,11 +17,6 @@ public class display extends Activity {
     String iBook;
     String iChapter;
     String iVerse;
-//    MainActivity mainBook;
-//    MainActivity mainChapter;
-//    MainActivity mainVerse;
-//    private TextView displayTxt;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +28,8 @@ public class display extends Activity {
         iBook = intent.getString("book");
         iChapter = intent.getString("chapter");
         iVerse = intent.getString("verse");
-       // iBook = intent.getStringExtra("book");
-       // iChapter = intent.getStringExtra("chapter");
-       // iVerse = intent.getStringExtra("verse");
 
-
+        // display total result
         display.setText("Your favorite scripture is " + iBook + " " + iChapter + " : " + iVerse);
 
     }

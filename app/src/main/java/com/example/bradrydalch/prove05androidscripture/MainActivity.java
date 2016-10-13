@@ -25,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // create intent object to hold data
-        // will pass intent object to next activity containing data
-
         // handle book input
         EditText editTextBook = (EditText) findViewById(R.id.bookID);
         editTextBook.setOnEditorActionListener(new TextView.OnEditorActionListener(){
@@ -81,12 +78,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-        // place data inside intent object
-
-
     }
 
+    // submit data to second activity
     public void submitted(View v){
         if (v.getId() == R.id.submitButton){
             Intent i = new Intent(MainActivity.this, display.class);
